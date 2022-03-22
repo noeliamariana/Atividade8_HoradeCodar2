@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 24</title>
+    <script>
+    /*24 - Um zoológico muito louco
+    Escreva um programa que leia a idade de 2 javalis 
+    e 2 girafas (considere que a idade dos javalis será
+    sempre diferente, assim como das girafas ). Calcule 
+    e escreva a soma das idades do 
+    javali mais velho com a girafa mais nova, 
+    e o produto das idades do javali 
+    mais novo com a girafa mais velha.*/
+
+    var idadejavali1 = parseInt(prompt("Coloque a idade do primeiro javali"));
+    var idadejavali2 = parseInt(prompt("Coloque a idade do segundo javali"));
+    
+    var idadegirafa1 = parseInt(prompt("Coloque a idade da primeira girafa"));
+    var idadegirafa2 = parseInt(prompt("Coloque a idade da segunda girafa"));
+
+    if(idadejavali1 > idadejavali2 && idadegirafa1 > idadegirafa2 ){
+        alert("A soma das idades do javali mais velho com a girafa mais nova é igual a: " + (idadejavali1 + idadegirafa2));
+        alert("O produto das idades do javali mais novo com a girafa mais velha é igual a: " + (idadejavali2 * idadegirafa1));
+    }
+    else if(idadejavali1 > idadejavali2 && idadegirafa1 < idadegirafa2 ){
+        alert("A soma das idades do javali mais velho com a girafa mais nova é igual a:" + (idadejavali1 + idadegirafa1));
+        alert("O produto das idades do javali mais novo com a girafa mais velha é igual a: " + (idadejavali2 * idadegirafa2));
+    }
+    if(idadejavali2 > idadejavali1 && idadegirafa1 < idadegirafa2){
+        alert("A soma das idades do javali mais velho com a girafa mais nova é igual a:" + (idadejavali2 + idadegirafa1));
+        alert("O produto das idades do javali mais novo com a girafa mais velha é igual a: " + (idadejavali1 * idadegirafa2));
+   }
+    else if(idadejavali2 > idadejavali1 && idadegirafa1 > idadegirafa2){
+        alert("A soma das idades do javali mais velho com a girafa mais nova é igual a:" + (idadejavali2 + idadegirafa2));
+        alert("O produto das idades do javali mais novo com a girafa mais velha é igual a: " + (idadejavali1 * idadegirafa1));
+   }
+   else{
+       alert("Ops! Idades iguais.");
+   }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

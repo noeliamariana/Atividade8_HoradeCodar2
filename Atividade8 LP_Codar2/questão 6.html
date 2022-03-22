@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+    <script>
+        /*6. Faça um programa que leia 10 valores informados pelo usuário, 
+        calcule, exiba os números informados e escreva a média aritmética desses 
+        valores lidos.*/
+        var soma = 0;
+        var array =[]
+        for(x=1; x<=10; x++){
+            var n = parseInt(window.prompt("Digite um número"))
+            array.push(n)
+        }
+
+        for(var x=0; x<array.length; x++){
+            soma += array[x]
+        }
+
+        window.alert("A soma desses valores é " + soma + ". A média deles é igual a "+ soma/10)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

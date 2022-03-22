@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 13</title>
+
+    <script>
+        /*13 - Escreva um programa para ler as notas das 4 avaliações de um aluno no semestre,
+        calcular e escrever a média semestral e a seguinte mensagem: PARABÉNS! Você foi aprovado! 
+        somente se o aluno foi aprovado (considere 6.0 a média mínima para aprovação e 4 notas informadas).*/
+
+        /*14 - Acrescente ao exercício anterior a mensagem "Infelizmente, você foi reprovado!" 
+        caso a média calculada seja menor que 6.0.*/
+
+         var avaliacao1 = parseInt(prompt("Digite a primeira avaliação"));
+         var avaliacao2 = parseInt(prompt("Digite a segunda avaliacao"));
+         var avaliacao3 = parseInt(prompt("Digite a teceira avaliacao"));           
+         var avaliacao4 = parseInt(prompt("Digite a teceira avaliacao"));        
+
+         var soma = avaliacao1 + avaliacao2 + avaliacao3 + avaliacao4;
+         var mediaSemestral = (soma/4);
+
+         if(mediaSemestral>=6.0){
+            alert("PARABÉNS! Você foi aprovado!");
+         }
+         else{
+             alert("Infelizmente, você foi reprovado!");
+         }
+
+    </script>
+</head>
+<body>    
+</body>
+</html>

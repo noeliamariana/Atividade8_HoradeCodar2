@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 22</title>
+    <script>
+        /*22. A Loja Remi du Fromage está com uma promoção onde cada capacete artesanal 
+        para tartaruga custa R$18.230 e pode ser pago em até 15 vezes sem juros. Crie um
+        programa onde o usuário possa informar o valor parcelas que deseja pagar e exiba
+        o valor de cada parcela.*/
+        
+        alert("O capacete custa R$18230,00.\nE pode ser pago em até 15 vezes sem juros.");
+        var capacete = 18230;        
+        var valor_parcelas = parseInt(prompt("Informe o valor das parcelas que deseja pagar"));
+
+        var cada_parcela = capacete / valor_parcelas;
+
+        if(valor_parcelas >= 1 && valor_parcelas <= 15){
+        alert("Cada parcela será igual a: R$" + cada_parcela);
+        }
+        else{
+            alert("Pode ser pago em até 15 vezes sem juros. Informe novamente o valor das parcelas!");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

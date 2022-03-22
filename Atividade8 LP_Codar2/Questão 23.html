@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 23</title>
+    <script>
+    /*23 - Faça um programa em que o usuário informe 20 
+    valores e no final, escreva o maior e o menor valor lido.*/
+
+    var contagem = 1;
+    var num_maior = 0;
+    var num_menor = 0;
+
+    while(contagem <=20){
+     valor = parseInt(prompt("Informe o valor " + contagem ))
+    
+    if(contagem == 1){
+        var maior = valor;
+        var menor = valor;
+    }
+    if (valor > maior){
+        maior = valor;
+    }
+
+    else if (valor < menor){
+        menor = valor;
+    }
+
+    num_maior = maior ;
+    num_menor = menor;
+
+    contagem ++;
+    }
+    alert("O maior número é: " + num_maior + "\n O menor número é :"+ num_menor);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

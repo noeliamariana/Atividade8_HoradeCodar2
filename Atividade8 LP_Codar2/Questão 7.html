@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+    <script>
+    /*7. Faça um programa que receba quatro valores informados pelo 
+    usuário, mas informe somente o primeiro, o último e o maior de 
+    todos eles (considere que todos os números informados serão 
+    diferentes)*/
+
+    var valor1 = prompt("Informe o primeiro número");
+    var valor2 = prompt("Informe o segundo número");
+    var valor3 = prompt("Informe o terceiro número");
+    var valor4 = prompt("Informe o quarto número");
+        
+        
+        if (valor1>valor2 && valor1> valor3 && valor1>valor4){
+            alert("O " + valor1+ " é o primeiro número. O " + valor4+ " é o último número. "+ "O maior número é o "+valor1);
+        }
+        else if (valor2>valor1 && valor2> valor3 && valor2>valor4){
+            alert("O " + valor1+ " é o primeiro número. O " + valor4+ " é o último número. "+ "O maior número é o "+valor2);
+        }
+        else if (valor3>valor1 && valor3> valor2 && valor3>valor4){
+            alert("O " + valor1+ " é o primeiro número. O " + valor4+ " é o último número. "+ "O maior número é o "+valor3);
+        }
+        else if (valor4>valor1 && valor4> valor2 && valor4>valor3){
+            alert("O " + valor1+ " é o primeiro número. O " + valor4+ " é o último número. "+ "O maior número é o "+valor4);
+        }
+        else{
+            alert("Números iguais. Coloque números diferentes!");
+        }
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+    
+</body>
+</html>
